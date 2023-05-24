@@ -1,8 +1,0 @@
-
-<h2>Tauler del Super Herois</h2>
-<div class ="heroes-menu">
-  <nav>
-    <a *ngFor = "let hero of herois" [class.selected] = "hero === selectedHero" (click)="selectedHero=hero" routerLink="/detall/{{ hero.id }}">{{ hero.name | uppercase }}</a>
-  </nav>
-
-</div>
