@@ -1,0 +1,22 @@
+h1 {
+  color: #8989ef;
+}
+nav {
+  margin: 1% auto;
+  padding: 1rem;
+}
+a {
+  padding: 1rem;
+  text-decoration: none;
+  background: #8989ef;
+  color: #fefefe;
+  border-color: solid #121212 2px;
+  margin: 0 1rem 0 1rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+}
+a:hover {
+  background: #cf2332;
+  color: whitesmoke;
+  border-color: solid #562323 2px;
+}

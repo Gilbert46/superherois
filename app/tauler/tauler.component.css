@@ -1,0 +1,26 @@
+nav {
+  margin: 1% auto;
+  padding: 1rem;
+}
+a {
+  padding: 0.85rem;
+  text-decoration: none;
+  background: #aeaeae;
+  color: rgb(255, 250, 238);
+  border-color: solid whitesmoke 5rem;
+  margin: 1% .25% auto;
+  border-radius: 1rem;
+  box-shadow: rgba(1, 1, 1, 0.5);
+  font-size: 1rem;
+
+}
+a:hover {
+  background: #894512;
+  color: whitesmoke;
+  border-color: solid #894512 5rem;
+}
+@media only screen and (min-width: 780px) {
+  a {font-size: 1.5rem;
+    margin: 1.5% 1.5% auto;
+    padding: 1rem;}
+}
