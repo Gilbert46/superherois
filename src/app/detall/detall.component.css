@@ -1,0 +1,54 @@
+label {
+  color: #343434;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .25rem;
+  margin-top: 1%;
+  background: #efefef;
+  color: #343434;
+}
+input:hover {
+  background: #895656;
+  color: #efefef;
+}
+button {
+  margin: 0.5rem 0.25rem 0 0.25rem;
+  background-color: #efefef;
+  color: #2c2c2c;
+  border-color: solid #454545 2px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(1, 1, 1, 0.5);
+  font-size: 1rem;
+  width: 110px;
+}
+button:hover {
+  background-color: #cf2332;
+  color: #efefef;
+
+}
+button:disabled {
+  background-color: #afafaf;
+  color: #686868;
+  cursor: auto;
+}
+
+.exit {
+  background-color: #cfcf33;
+  color: #801111;
+}
+.exit:hover {
+  background-color: #cfcfcf;
+  color: #232323;
+}
+.destroy {
+  background-color: #cf2332;
+  color: #efefef;
+}
+.destroy:hover {
+  background-color: #cfcfcf;
+  color: #2c2c2c;
+}
+
