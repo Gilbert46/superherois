@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name }} (Detalls del SuperHeroi)</h2>
+  <div>
+    <label for="hero-id">Iden de l'heroi: </label><input id="hero-id" [(ngModel)]="hero.id">
+  </div>
+  <div>
+    <label for="hero-name">Nom de l'heroi: </label><input id="hero-name" [(ngModel)]="hero.name">
+  </div>
+  <button type="button" class="exit" (click)="goBack()">Tornar enrere</button>
+  <button type="button" (click)="operaCRUD(1)">Modificar heroi</button>
+  <button type="button" (click)="operaCRUD(2)">Crear Nou heroi</button>
+  <button type="button" (click)="operaCRUD(4)">cerca per Id</button>
+  <button type="button" (click)="operaCRUD(9)">cerca per Nom</button>
+  <button type="button" class="destroy" (click)="operaCRUD(3)">Eliminar heroi</button>
+</div>
+
