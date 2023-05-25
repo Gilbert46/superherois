@@ -45,7 +45,6 @@ export class DetallComponent implements OnInit {
 
   operaCRUD(oper :number): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.heroService.getHero(id, 10).subscribe(herois => this.herois = herois);
     if ((this.hero.name != "" || oper == 4) && (this.hero.id != 0 || oper == 9)) {
       if (oper == 1) {
         if (this.hero.id != id) {

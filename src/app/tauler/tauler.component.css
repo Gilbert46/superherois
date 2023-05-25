@@ -7,13 +7,13 @@ a {
   border: #e9e9d2 solid 0.25rem;
   margin: 1% auto;
   border-radius: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   display: block;
 }
 a:hover {
   background: #894512;
   color: #ffd000;
   border:#894512 solid 0.25rem;
-  font-size: 1.8rem;
+  font-size: 1.55rem;
 }
 
