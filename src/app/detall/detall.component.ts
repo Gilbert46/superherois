@@ -63,6 +63,7 @@ export class DetallComponent implements OnInit {
             this.herois[j].name = this.hero.name;
             this.herois[j].id = this.hero.id;
             this.heroService.getHero(this.hero.id, oper).subscribe(herois => this.herois = herois);
+            this.heroService.updateHero(this.hero);
             this.location.back();
             break;
           }
@@ -80,22 +81,28 @@ export class DetallComponent implements OnInit {
           if (i == this.herois.length - 1) {
             this.herois.push(this.hero);
             this.heroService.getHero(this.hero.id, oper).subscribe(herois => this.herois = herois);
+            this.heroService.addHero(this.hero);
             this.location.back();
-            break;
           }
         }
       }
       else if (oper == 3) {
-        for (let i=0; i<this.herois.length; i++) {
-          if (this.herois[i].id == this.hero.id) {
-            this.herois.splice(i, 1);
-            this.heroService.getHero(this.hero.id, oper).subscribe(herois => this.herois = herois);
-            this.location.back();
-            break;
+        if (this.herois.length > 4) {
+          for (let i=0; i<this.herois.length; i++) {
+            if (this.herois[i].id == this.hero.id) {
+              this.herois.splice(i, 1);
+              this.heroService.getHero(this.hero.id, oper).subscribe(herois => this.herois = herois);
+              this.heroService.deleteHero(this.hero.id);
+              this.location.back();
+              break;
+            }
+            if (i == this.herois.length - 1) {
+              this.heroService.getHero(this.hero.id, 7).subscribe(herois => this.herois = herois);
+            }
           }
-          if (i == this.herois.length - 1) {
-            this.heroService.getHero(this.hero.id, 7).subscribe(herois => this.herois = herois);
-          }
+        }
+        else {
+          this.heroService.getHero(this.hero.id, 9).subscribe(herois => this.herois = herois);
         }
       }
       else if (oper == 4) {
